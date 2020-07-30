@@ -1,4 +1,4 @@
-# ![](./doc/model.png) Consider using the dual model...
+# ![](./doc/model.png) When the dual model is a better fit
 
 
 
