@@ -1,6 +1,6 @@
-# ![](./doc/model.png) 
+![](./doc/model.png) 
 
-Improve expressivity and performance using a dual model
+# Improve expressivity and performance using a dual model
 
 
 
