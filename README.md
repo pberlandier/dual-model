@@ -1,4 +1,6 @@
-# ![](./doc/model.png) When the dual model is a better fit
+# ![](./doc/model.png) 
+
+Improve expressivity and performance using a dual model
 
 
 
