@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>define regular working days</name>
+  <uuid>5521a70b-bf2e-456b-b8dc-ad2c64d86a8a</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+	set day to a day in the members of period2 ; 
+if 
+	 it is not true that day is saturday and
+	 it is not true that day is sunday and
+	 it is not true that day is holiday  
+then
+	make it true that day is working day ; 
+	
+	
+	]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>calculate regular work days count</name>
+  <uuid>bb91afb8-817f-4fc6-ac15-08c7f778dab0</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+	set day to a day in the members of period2 ; 
+if 
+	day is worked and 
+	day is working day
+then
+	set 'regular count' to 'regular count' + 1;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

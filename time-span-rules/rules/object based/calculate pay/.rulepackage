@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>calculate pay</name>
+  <uuid>fd583622-c1a6-4532-a08d-3eb606ca3fd8</uuid>
+</ilog.rules.studio.model.base:RulePackage>

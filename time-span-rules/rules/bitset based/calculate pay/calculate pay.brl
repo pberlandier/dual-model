@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>calculate pay</name>
+  <uuid>b0ae118e-3af2-40ac-b93d-2c158f275b0e</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+	set 'working days' to all "working day" of period1 ;
+	set 'overtime days' to all "overtime day" of period1 ;
+	set 'worked' to all "worked day" of period1;
+	
+	set 'worked regular' to 'worked' and 'working days' ;
+	set 'worked overtime' to 'worked' and 'overtime days' ;
+then
+	set pay to (the count of 'worked regular' + the count of 'worked overtime' * 2) * 175 ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

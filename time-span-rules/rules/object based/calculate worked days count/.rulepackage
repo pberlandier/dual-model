@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>calculate worked days count</name>
+  <uuid>58e22c49-2e65-44d9-9222-825145f4df81</uuid>
+</ilog.rules.studio.model.base:RulePackage>

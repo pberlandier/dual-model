@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="bitset_based_operation" usingRuleflow="true" ruleflowName="bitset based flow" targetRuleProjectName="time-span-rules">
+  <name>bitset based operation</name>
+  <uuid>b5aec1b9-cbcb-487c-85a8-97aba5175ad8</uuid>
+  <ruleflow href="../rules/bitset%20based%20flow.rfl#cb4188cb-59c8-4dcd-86de-309a4d0a3789"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="bitset based operation_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../time-span-rules#02322640-d68b-49fa-9511-8b01c72735d1"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

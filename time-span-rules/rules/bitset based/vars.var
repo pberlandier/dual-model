@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>vars</name>
+  <uuid>1def4669-309b-439e-8c8b-6e83918ddbc7</uuid>
+  <variables name="period1" type="odm.timespan.TimeSpanSequence" initialValue="odm.timespan.TimeSpanSequence.createSampleInstance(1000)" verbalization="period1"/>
+</ilog.rules.studio.model.base:VariableSet>

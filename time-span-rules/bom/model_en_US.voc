@@ -1,0 +1,35 @@
+# Vocabulary Properties
+odm.timespan.Day.officeClosed#phrase.action = make it {office closed} that {this} is office closed
+odm.timespan.Day.officeClosed#phrase.navigation = {this} is closed
+uuid = 6616603e-e249-4a08-908a-1709686376b1
+
+# odm.timespan.Day
+odm.timespan.Day#concept.label = day
+odm.timespan.Day.holiday#phrase.action = make it {holiday} that {this} is holiday
+odm.timespan.Day.holiday#phrase.navigation = {this} is holiday
+odm.timespan.Day.overtime#phrase.action = make it {overtime} that {this} is overtime
+odm.timespan.Day.overtime#phrase.navigation = {this} is overtime
+odm.timespan.Day.saturday#phrase.navigation = {this} is saturday
+odm.timespan.Day.sunday#phrase.navigation = {this} is sunday
+odm.timespan.Day.worked#phrase.action = make it {worked} that {this} is worked
+odm.timespan.Day.worked#phrase.navigation = {this} is worked
+odm.timespan.Day.workingDay#phrase.action = make it {working day} that {this} is working day
+odm.timespan.Day.workingDay#phrase.navigation = {this} is working day
+
+# odm.timespan.DayList
+odm.timespan.DayList#concept.label = day list
+odm.timespan.DayList.members#phrase.action = set the members of {this} to {member}
+odm.timespan.DayList.members#phrase.navigation = {member} of {this}
+
+# odm.timespan.TimeSpanSequence
+odm.timespan.TimeSpanSequence#concept.label = time span sequence
+
+# odm.timespan.TimeSpanSequence.Properties
+odm.timespan.TimeSpanSequence.Properties#concept.label = properties
+odm.timespan.TimeSpanSequence.Properties.and(odm.timespan.TimeSpanSequence.Properties)#phrase.navigation = {this} and {0}
+odm.timespan.TimeSpanSequence.Properties.cardinality()#phrase.navigation = the count of {this}
+odm.timespan.TimeSpanSequence.Properties.not()#phrase.navigation = not {this}
+odm.timespan.TimeSpanSequence.Properties.or(odm.timespan.TimeSpanSequence.Properties)#phrase.navigation = {this} or {0}
+odm.timespan.TimeSpanSequence.getCardinality(java.lang.String)#phrase.navigation = the count of {0} in {this}
+odm.timespan.TimeSpanSequence.getProperties(java.lang.String)#phrase.navigation = all {0} of {this}
+odm.timespan.TimeSpanSequence.setProperties(java.lang.String,odm.timespan.TimeSpanSequence.Properties)#phrase.action = set the {0} of {this} to {1}

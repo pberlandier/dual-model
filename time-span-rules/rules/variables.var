@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>variables</name>
+  <uuid>6f51149c-680d-48c1-9494-7aa972a9a03a</uuid>
+  <variables name="startTime" type="long" initialValue="" verbalization="start time"/>
+  <variables name="totalTime" type="long" initialValue="" verbalization="total time"/>
+  <variables name="pay" type="double" initialValue="" verbalization="pay"/>
+  <variables name="numberOfDays" type="int" initialValue="" verbalization=""/>
+</ilog.rules.studio.model.base:VariableSet>
