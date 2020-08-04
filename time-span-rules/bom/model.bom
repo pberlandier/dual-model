@@ -2,7 +2,7 @@
 property loadGetterSetterAsProperties "true"
 property origin "xom:/time-span-rules//time-span-xom"
 property uuid "eb62e097-1ea8-41be-9127-60c85c45cba8"
-package odm.timespan;
+package odm.duality;
 
 
 public class Day
@@ -16,29 +16,29 @@ public class Day
     public Day(int arg);
 }
 
-public class DayList
-{
-    public java.util.List members domain 0,* class odm.timespan.Day;
-    public DayList();
-    public static odm.timespan.DayList createSampleInstance(int arg);
-}
-
-public class TimeSpanSequence
+public class DualTimePeriod
 {
 
     public class Properties
     {
-        public odm.timespan.TimeSpanSequence.Properties and(odm.timespan.TimeSpanSequence.Properties arg);
+        public odm.duality.DualTimePeriod.Properties and(odm.duality.DualTimePeriod.Properties arg);
         public int cardinality();
-        public odm.timespan.TimeSpanSequence.Properties not();
-        public odm.timespan.TimeSpanSequence.Properties or(odm.timespan.TimeSpanSequence.Properties arg);
+        public odm.duality.DualTimePeriod.Properties not();
+        public odm.duality.DualTimePeriod.Properties or(odm.duality.DualTimePeriod.Properties arg);
     }
-    public TimeSpanSequence(int arg);
-    public static odm.timespan.TimeSpanSequence createSampleInstance(int arg);
+    public DualTimePeriod(int arg);
+    public static odm.duality.DualTimePeriod createSampleInstance(int arg);
     public int getCardinality(string arg);
-    public odm.timespan.TimeSpanSequence.Properties getProperties(string arg);
+    public odm.duality.DualTimePeriod.Properties getProperties(string arg);
     public boolean getProperty(int arg1, string arg2);
-    public void setProperties(string arg1, odm.timespan.TimeSpanSequence.Properties arg2);
+    public void setProperties(string arg1, odm.duality.DualTimePeriod.Properties arg2);
     public void setProperty(int arg1, string arg2);
+}
+
+public class TimePeriod
+{
+    public java.util.List members domain 0,* class odm.duality.Day;
+    public TimePeriod();
+    public static odm.duality.TimePeriod createSampleInstance(int arg);
 }
 

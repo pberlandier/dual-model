@@ -2,7 +2,7 @@
 <ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
   <name>vars</name>
   <uuid>3b9e254e-602a-4e66-a83d-f48394b472a7</uuid>
-  <variables name="period2" type="odm.timespan.DayList" initialValue="odm.timespan.DayList.createSampleInstance(1000)" verbalization="period2"/>
+  <variables name="period2" type="odm.duality.TimePeriod" initialValue="odm.duality.TimePeriod.createSampleInstance(1000)" verbalization="period2"/>
   <variables name="regularCount" type="int" initialValue="0" verbalization="regular count"/>
   <variables name="overtimeCount" type="int" initialValue="0" verbalization="overtime count"/>
 </ilog.rules.studio.model.base:VariableSet>

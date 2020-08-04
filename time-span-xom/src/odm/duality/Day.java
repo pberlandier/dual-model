@@ -1,4 +1,4 @@
-package odm.timespan;
+package odm.duality;
 
 public class Day {
 

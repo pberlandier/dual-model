@@ -1,10 +1,10 @@
-package odm.timespan;
+package odm.duality;
 
 import java.util.BitSet;
 import java.util.Hashtable;
 
 /**
- * This class represent a sequence of elements (used here for time spans, e.g.
+ * This class represent a sequence of elements (used here for time period, e.g.
  * hours, days, months, ...) with an dynamically defined set of boolean
  * properties. It allows to perform efficient batch computations on boolean
  * expressions involving the different properties through the use of bit sets.
@@ -12,11 +12,11 @@ import java.util.Hashtable;
  * @author PIERREBerlandier
  *
  */
-public class TimeSpanSequence {
+public class DualTimePeriod {
 	private int size;
 	private Hashtable<String, Properties> propsTable;
 
-	public TimeSpanSequence(int size) {
+	public DualTimePeriod(int size) {
 		this.size = size;
 		this.propsTable = new Hashtable<String, Properties>();
 	}
@@ -32,7 +32,7 @@ public class TimeSpanSequence {
 	}
 
 	/**
-	 * Returns the value of a given property for the time span at a given index.
+	 * Returns the value of a given property for the time period at a given index.
 	 * 
 	 * @param index
 	 * @param propName
@@ -43,7 +43,7 @@ public class TimeSpanSequence {
 	}
 
 	/**
-	 * Sets the value of a given property for the time span at a given index.
+	 * Sets the value of a given property for the time period at a given index.
 	 * 
 	 * @param index
 	 * @param propName
@@ -53,7 +53,7 @@ public class TimeSpanSequence {
 	}
 
 	/**
-	 * Returns the properties for all the time spans in the sequence.
+	 * Returns the properties for all the time periods in the sequence.
 	 * 
 	 * @param propName
 	 * @return
@@ -68,7 +68,7 @@ public class TimeSpanSequence {
 	}
 
 	/**
-	 * Sets the properties for all the time spans in the sequence.
+	 * Sets the properties for all the time periods in the sequence.
 	 * 
 	 * @param propName
 	 * @param props
@@ -77,8 +77,8 @@ public class TimeSpanSequence {
 		propsTable.put(propName, props);
 	}
 
-	public static TimeSpanSequence createSampleInstance(int count) {
-		TimeSpanSequence instance = new TimeSpanSequence(count);
+	public static DualTimePeriod createSampleInstance(int count) {
+		DualTimePeriod instance = new DualTimePeriod(count);
 		for (int i = 0; i < count; i++) {
 			if (i % 7 == 5) {
 				instance.setProperty(i, "saturday");

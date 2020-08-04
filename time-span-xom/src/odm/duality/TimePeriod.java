@@ -1,9 +1,9 @@
-package odm.timespan;
+package odm.duality;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DayList {
+public class TimePeriod {
 	private List<Day> members;
 
 	public List<Day> getMembers() {
@@ -20,8 +20,8 @@ public class DayList {
 	 * @param count
 	 * @return
 	 */
-	public static DayList createSampleInstance(int count) {
-		DayList instance = new DayList();
+	public static TimePeriod createSampleInstance(int count) {
+		TimePeriod instance = new TimePeriod();
 		ArrayList<Day> members = new ArrayList<Day>();
 		instance.setMembers(members);
 		for (int i = 0; i < count; i++) {
